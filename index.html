@@ -1,89 +1,104 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8">
-    <meta property="og:title" content="5374.jp金沢版" />
-    <meta property="og:type" content="product" />
-    <meta property="og:url" content="http://kanazawa.5374.jp/" />
-    <meta property="og:description" content="Code for Kanazawaの作った5374.jpは貴方の地域で、いつ、どのゴミが回収されるのか、簡単に知る事ができます。" />
-    <meta property="og:image" content="http://kanazawa.5374.jp/img/ogp.png" />
-    <meta name="Keywords" content="金沢市,5374,ごみ,ゴミ収集日" />
-    <meta name="description" content="Code for Kanazawaの作った5374.jpは貴方の地域で、いつ、どのゴミが回収されるのか、簡単に知る事ができます。" />
-    <title>5374(ｺﾞﾐﾅｼ).jp</title>
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
-    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png" />
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
-    <link href="css/custom.css" rel="stylesheet" media="screen" />
-  </head>
-  <body>
-  <style id="accordion-style" type="text/css"></style>
-  <div id="accordion"></div>
-  <select class="form-control" id="select_area"></select>
-  <div class="accordion" id="accordion3">
-    <div class="accordion-group-top">
-      <div class="accordion-heading">
-        <a class="accordion-toggle-top" data-toggle="collapse" data-parent="#accordion3" href="#collapse3_0">5374.jpについて</a>
-      </div>
-      <div id="collapse3_0" class="accordion-body collapse">
-        <div class="accordion-inner">
-          <div id="help">
-ゴミの問題は、どの地域でも深刻になりつつあります。
-Code for Kanazawaでは、先ずは正しいゴミの捨て方に注目しました。
-目的と使い方は、とてもシンプルです。
-            <h2>目的</h2>
-「いつ、どのゴミが収集されているのか？」
-例えばお引っ越しをされた場合や、新しく金沢市に住むことになった時、このアプリを使えば、すぐに分かるようにデザインされています。
-            <h2>使い方</h2>
-            <h3>色でゴミのジャンルを表示</h3>
-            <p>一番近いゴミの日とジャンルを上から順に表示しています。</p>
-            <h3>捨てる事が可能なゴミ</h3>
-            <p>ゴミのジャンルをタップすると、捨てることが可能なゴミの一覧を見ることができます</p>
-            <h3>設定</h3>
-            <p>お住まいの地域を選択することで、ゴミ収集日が自動的に更新されます。</p>
-            <div id="caption">
-              <h4>提供されるゴミ情報について</h4>
-              <p>金沢市が公開しているデータからCfKが独自に解析し、アプリに実装しました。</p>
-              <h4>ライセンスについて</h4>
-              <p>本アプリの著作権はCode for Kanazawaに帰属します。</p>
-            </div>
-            <div id="cfk">
-              <h3>Code for Kanazawaについて</h3>
-              <p>コードで、世界をHappyに。<br />
-各地域には様々な課題があり、解決するためのコミュニティ（団体）も数多くあります。<br />
-課題の中には、ITやデザインの力で解決できるものも多くありますが、全てのコミュニティにそのスキル（技術）が備わっているわけではありません。<br /><br />
-Code for Kanazawa（CfK）は、市民の課題を集め、その課題を整理・分析した上で、メンバーが実際に課題解決となるソフトウェアやハードウェア（仕組みや方法）を開発します。<br />
-私たちは、デザインをして、ソフトウェアコードを書き、課題を解決するサービスを完成させるのです。さらに、そのサービスを提供し続ける力も持ちます。<br /><br />
-CfKは市民のための組織です。行政や民間企業の影響を受けずに中立・公益の立場から物事を判断するよう心がけています。<br /><br />
-公式サイト<br />
-<a href="http://www.codeforkanazawa.org/" style=" color: #FF0000;text-decoration: underline;">http://www.codeforkanazawa.org/</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- JavaScript plugins (requires jQuery) -->
-  <script src="js/jquery-1.10.2.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.min.js"></script>
-  <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) 
-  <script src="js/respond.js"></script>
-  -->  
-  <!-- ブックマークお勧めポップアップ追加-->
-  <script src="js/bookmark-bubble/bookmark_bubble.min.js"></script>
-  <script src="js/bookmark-bubble/example/example.min.js"></script>
-  <script src="js/setting.js"></script>
-  <script src="js/script.js"></script>
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-43926409-1', '5374.jp');
-  ga('send', 'pageview');
-  </script>
-  </body>
-</html>
+
+家庭ごみの分け方・出し方 
+	•	あさ8時30分までに出してください。
+	•	3袋以内を1回の目安にして出してください。
+	•	正月(1/1〜1/3)はごみの収集はお休みです。お正月休みの場合、振替収集はありません。
+	•	子供の日(5/5)、勤労感謝の日(11/23)もごみ収集はお休みです。ただし、子供の日・勤労感謝の日のもやせるごみは、翌日に収集します。そのため翌日の資源ごみのはお休みになりますので、ご了承くださいますようお願いします。(台風の場合も同様の取り扱いになります。)
+もやせるごみ用
+もやせないごみ用
+危険ごみ用
+資源ごみ用
+ごみ出しルールを守りましょう！
+	•	もやせるごみ、もやせないごみ、危険ごみ、資源ごみ(紙類除く)は、豊見城市指定のごみ袋に入れて出しましょう。指定袋以外の袋を使用した場合は、収集できません。
+	•	粗大ごみは必ず粗大ごみ処理券を貼って出してください。粗大ごみ処理券の貼られていないものは、収集できません。
+	•	引っ越しや、大掃除などで多量に出たごみは、自分で清掃工場(糸豊環境美化センター)へ直接搬入してください。TEL:098-997-3078
+	•	身分を証明する書類(免許証・保険証・事業所の証明など)を直接提示し搬入することができます。
+
+粗大ごみ 
+粗大ごみとは
+	•	原則として30cm以上のごみとなります。
+	•	＜注意＞30cm以内でも、収集車を破損させるおそれがあるごみは、粗大ごみとなる場合があります。
+	•	粗大ごみは、事前に電話で申し込み、粗大ごみ処理券を貼って出してください。処理券はお近くのスーパー、コンビニ、雑貨店でお買い求めください。
+	•	1回の申し込みの目安は、概ね6個までです。収集日は、申込時にお知らせします。
+	•	申込先：生活環境課 098-850-5520 受付時間8:30〜17:15 土日祝祭日休み
+	•	※木の枝・幹・板きれは、長さ1m以内、厚み15cm以内にカットし、10kg未満に束ねて出してください。
+	•	※物干し竿やトタン等の長大物は、1m以内にカットするか折り曲げて出してください。
+	•	※種類によっては、清掃工場で処理できないものもありますので、生活環境課までお問い合わせください。
+	•	※地域や場所によっては粗大ごみの回収場所を変更することがあります。
+粗大ごみ(大)
+	•	1点で重さが10kg以上のもの
+	•	タンス
+	•	机
+	•	ベッド
+	•	ベッド用(マットレス)
+	•	ソファー
+	•	食器棚
+	•	畳など
+粗大ごみ(小)
+	•	重さが10kg未満のもの
+	•	申し込みしたものの中で軽いものなどは、10kg未満にまとめてダンボールや市販の袋などへ入れて出せば、粗大ごみ処理券(小)1枚で可能です。
+	•	布団
+	•	毛布
+	•	体重計
+	•	電子レンジ
+	•	炊飯器
+	•	ビデオデッキ
+	•	扇風機
+	•	掃除機
+	•	ガスコンロ
+	•	ラジカセなど
+パソコンのリサイクル
+	•	お問い合わせ：パソコン3R推進センター 03-5282-7685
+	•	パソコンを購入したメーカーに直接お申し込みください。
+	•	デスクトップパソコン(本体)
+	•	ノートパソコン
+	•	CRTディスプレイ
+	•	液晶ディスプレイ
+
+収集できない物 
+市で収集できない物
+	•	ブロック、レンガ
+	•	ガスボンベ
+	•	化学薬品
+	•	タイヤ、バッテリー、車の部品全般
+	•	ピアノ
+	•	オートバイ
+	•	消化器
+	•	屋上タンク
+	•	ボート
+	•	火薬オイル
+	•	ペンキ
+	•	シンナー、肥料
+	•	建築廃材
+	•	焼却灰、農薬
+	•	土、砂、コンクリート
+	•	廃プラ(農業用ビニール)
+	•	注射針などの医療廃棄物
+
+事業系ごみ 
+事業系ごみは市では収集しません
+市が許可した業者(許可業者)に依頼するか、又は自ら清掃工場(糸豊環境美化センター)に搬入してください。
+事業者の自己処理責任の徹底
+事業者は事業活動によって生じた廃棄物を自らの責任において適正に処理することが法律で規定されております。
+事業系ごみとは
+会社や飲食店・商店等の事業所に伴って発生するごみをいいます。事業活動とは、単に営利を目的とするもののみならず、他に教育・社会福祉事業等の公共事業・公共サービスなどの事業も含みます。
+
+5374.jpについて 
+ゴミの問題は、どの地域でも深刻になりつつあります。 Code for Kanazawaでは、先ずは正しいゴミの捨て方に注目しました。 目的と使い方は、とてもシンプルです。
+目的
+「いつ、どのゴミが収集されているのか？」 例えばお引っ越しをされた場合や、新しく金沢市に住むことになった時、このアプリを使えば、すぐに分かるようにデザインされています。
+使い方
+色でゴミのジャンルを表示
+一番近いゴミの日とジャンルを上から順に表示しています。
+捨てる事が可能なゴミ
+ゴミのジャンルをタップすると、捨てることが可能なゴミの一覧を見ることができます
+設定
+お住まいの地域を選択することで、ゴミ収集日が自動的に更新されます。
+提供されるゴミ情報について
+豊見城市が公開している情報から@skurimaが独自に解析し、アプリに実装しました。
+ライセンスについて
+本アプリの著作権はCode for Kanazawaに帰属します。
+Code for Kanazawaについて
+コードで、世界をHappyに。 各地域には様々な課題があり、解決するためのコミュニティ（団体）も数多くあります。 課題の中には、ITやデザインの力で解決できるものも多くありますが、全てのコミュニティにそのスキル（技術）が備わっているわけではありません。  Code for Kanazawa（CfK）は、市民の課題を集め、その課題を整理・分析した上で、メンバーが実際に課題解決となるソフトウェアやハードウェア（仕組みや方法）を開発します。 私たちは、デザインをして、ソフトウェアコードを書き、課題を解決するサービスを完成させるのです。さらに、そのサービスを提供し続ける力も持ちます。  CfKは市民のための組織です。行政や民間企業の影響を受けずに中立・公益の立場から物事を判断するよう心がけています。  公式サイト http://www.codeforkanazawa.org/ 
+Code for Okinawaについて
+Code for Okinawa(CfO)は、Code for Americaのキャッチフレーズ「BRINGING TOGETHER LOCAL GOVERNMENTS AND TECHNOLOGISTS TO MAKE BETTER CITIES FOR EVERYONE：みんなのためのよりよい地域を、行政と技術者が一緒につくる」の考え方をもとに、沖縄地区のオープンデータを推進し、地域の課題を解決するためのアイディアを考え、テクノロジーを活用して、解決していく、地域の市民参加型のオープン・コミュニティです。
